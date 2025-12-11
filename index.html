@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Suite</title>
+    <style>
+        :root { 
+            --bg: #121212; 
+            --card: #1e1e1e; 
+            --text: #fff; 
+            --accent: #3498db; 
+            --border: #333; 
+        }
+        body { 
+            background: var(--bg); 
+            color: var(--text); 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            padding: 20px; 
+            max-width: 600px; 
+            margin: 0 auto; 
+            text-align: center;
+        }
+        .logo { font-size: 3rem; margin-bottom: 10px; display: block; }
+        h1 { margin-bottom: 30px; font-weight: 300; letter-spacing: 1px; }
+        
+        .app-grid { display: flex; flex-direction: column; gap: 15px; }
+        
+        .app-btn {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s, border-color 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        
+        .app-btn:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+        }
+        
+        .icon { font-size: 1.5rem; margin-right: 15px; }
+        .label { font-weight: bold; font-size: 1.1rem; }
+        .desc { font-size: 0.8rem; color: #888; margin-top: 2px; }
+        
+        /* Footer */
+        footer { margin-top: 40px; color: #444; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <span class="logo">🧰</span>
+    <h1>SUITE DASHBOARD</h1>
+
+    <div class="app-grid">
+        
+        <a href="https://script.google.com/macros/s/AKfycbyWUSBeUV0YXLgYM7VBTxUCxIgepQ_DuojagEn9XQP1jfoBFJ5hMCDUs8NfgewM5bBj/exec" class="app-btn">
+            <span class="icon">🚆</span>
+            <div style="text-align: left;">
+                <div class="label">Fahrtbericht</div>
+                <div class="desc">Tägliche Zeiterfassung & Protokoll</div>
+            </div>
+        </a>
+
+        <a href="#" class="app-btn" style="opacity: 0.5;">
+            <span class="icon">📊</span>
+            <div style="text-align: left;">
+                <div class="label">Statistik (Bald)</div>
+                <div class="desc">Auswertung der Fahrten</div>
+            </div>
+        </a>
+
+    </div>
+
+    <footer>
+        &copy; 2025 Internal Tools Suite
+    </footer>
+
+</body>
+</html>
