@@ -22,7 +22,8 @@
             text-align: center;
         }
         .logo { font-size: 3rem; margin-bottom: 10px; display: block; }
-        h1 { margin-bottom: 30px; font-weight: 300; letter-spacing: 1px; }
+        h1 { margin-bottom: 30px; font-weight: 300; letter-spacing: 1px; color: var(--text); }
+        h4 { color: #888; font-weight: 400; margin-top: -20px; margin-bottom: 30px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; }
         
         .app-grid { display: flex; flex-direction: column; gap: 15px; }
         
@@ -44,41 +45,42 @@
             border-color: var(--accent);
         }
         
-        .icon { font-size: 1.5rem; margin-right: 15px; }
-        .label { font-weight: bold; font-size: 1.1rem; }
-        .desc { font-size: 0.8rem; color: #888; margin-top: 2px; }
+        .icon { font-size: 1.8rem; margin-right: 20px; }
+        .label { font-weight: bold; font-size: 1.2rem; }
+        .desc { font-size: 0.85rem; color: #888; margin-top: 4px; }
         
         /* Footer */
-        footer { margin-top: 40px; color: #444; font-size: 0.8rem; }
+        footer { margin-top: 50px; color: #444; font-size: 0.8rem; border-top: 1px solid #222; padding-top: 20px; }
     </style>
 </head>
 <body>
 
     <span class="logo">🧰</span>
     <h1>SUITE DASHBOARD</h1>
+    <h4>Internal Tools</h4>
 
     <div class="app-grid">
         
+        <a href="https://silent-suspect.github.io/shift-tracker/" class="app-btn">
+            <span class="icon">⏱️</span>
+            <div style="text-align: left;">
+                <div class="label">Zeiterfassung</div>
+                <div class="desc">Shift Tracker App</div>
+            </div>
+        </a>
+
         <a href="https://script.google.com/macros/s/AKfycbyWUSBeUV0YXLgYM7VBTxUCxIgepQ_DuojagEn9XQP1jfoBFJ5hMCDUs8NfgewM5bBj/exec" class="app-btn">
             <span class="icon">🚆</span>
             <div style="text-align: left;">
                 <div class="label">Fahrtbericht</div>
-                <div class="desc">Tägliche Zeiterfassung & Protokoll</div>
-            </div>
-        </a>
-
-        <a href="#" class="app-btn" style="opacity: 0.5;">
-            <span class="icon">📊</span>
-            <div style="text-align: left;">
-                <div class="label">Statistik (Bald)</div>
-                <div class="desc">Auswertung der Fahrten</div>
+                <div class="desc">Tagesbericht & Protokollierung</div>
             </div>
         </a>
 
     </div>
 
     <footer>
-        &copy; 2025 Internal Tools Suite
+        &copy; 2025 Suite Dashboard
     </footer>
 
 </body>
