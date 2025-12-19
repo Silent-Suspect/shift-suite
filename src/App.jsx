@@ -193,7 +193,7 @@ function App() {
       }
 
       // Debug: Log if something weird happens
-      if (dist === NaN) dist = 0;
+      if (isNaN(dist)) dist = 0;
 
       return { ...item, dist: dist > 0 ? Math.round(dist) : null };
     });
